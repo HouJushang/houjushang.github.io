@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://houjushang.com/2024/11/25/pytorch/%E6%B5%8B%E8%AF%95/</loc>
+    
+    <lastmod>2024-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/2024/08/08/Untitled%202/</loc>
+    
+    <lastmod>2024-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/2024/08/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/IDX%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</loc>
+    
+    <lastmod>2024-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/2024/08/10/123/</loc>
+    
+    <lastmod>2024-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/2024/08/08/Untitled%201/</loc>
+    
+    <lastmod>2024-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/2024/08/08/Untitled/</loc>
+    
+    <lastmod>2024-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/2023/08/10/%E6%B5%8B%E8%AF%95%20copy/</loc>
+    
+    <lastmod>2024-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://houjushang.com/about/index.html</loc>
     
     <lastmod>2023-10-10</lastmod>
@@ -65,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://houjushang.com/2023/08/10/%E6%B5%8B%E8%AF%95%20copy/</loc>
-    
-    <lastmod>2023-10-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://houjushang.com/2023/09/10/%E6%B5%8B%E8%AF%95/</loc>
     
     <lastmod>2023-10-10</lastmod>
@@ -94,7 +148,7 @@
 
   <url>
     <loc>https://houjushang.com/</loc>
-    <lastmod>2023-10-11</lastmod>
+    <lastmod>2024-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,7 +156,14 @@
   
   <url>
     <loc>https://houjushang.com/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-10-11</lastmod>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://houjushang.com/tags/ai-idx/</loc>
+    <lastmod>2024-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -110,8 +171,15 @@
 
   
   <url>
+    <loc>https://houjushang.com/categories/AI%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://houjushang.com/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-10-11</lastmod>
+    <lastmod>2024-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

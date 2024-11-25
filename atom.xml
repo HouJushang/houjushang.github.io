@@ -6,7 +6,7 @@
   <link href="https://houjushang.com/atom.xml" rel="self"/>
   
   <link href="https://houjushang.com/"/>
-  <updated>2023-10-10T10:55:10.191Z</updated>
+  <updated>2024-11-25T02:11:16.296Z</updated>
   <id>https://houjushang.com/</id>
   
   <author>
@@ -15,6 +15,116 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://houjushang.com/2024/11/25/pytorch/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://houjushang.com/2024/11/25/pytorch/%E6%B5%8B%E8%AF%95/</id>
+    <published>2024-11-25T02:11:09.774Z</published>
+    <updated>2024-11-25T02:11:16.296Z</updated>
+    
+    <content type="html"><![CDATA[<p>123</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;123&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试ai</title>
+    <link href="https://houjushang.com/2024/08/10/123/"/>
+    <id>https://houjushang.com/2024/08/10/123/</id>
+    <published>2024-08-10T11:22:08.000Z</published>
+    <updated>2024-08-08T02:29:13.086Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="aaa"><a href="#aaa" class="headerlink" title="aaa"></a>aaa</h1><p>阿发生登峰</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;aaa&quot;&gt;&lt;a href=&quot;#aaa&quot; class=&quot;headerlink&quot; title=&quot;aaa&quot;&gt;&lt;/a&gt;aaa&lt;/h1&gt;&lt;p&gt;阿发生登峰&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="AI学习笔记" scheme="https://houjushang.com/categories/AI%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="测试" scheme="https://houjushang.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDX文件格式</title>
+    <link href="https://houjushang.com/2024/08/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/IDX%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://houjushang.com/2024/08/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/IDX%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</id>
+    <published>2024-08-10T11:22:08.000Z</published>
+    <updated>2024-08-08T06:22:10.540Z</updated>
+    
+    <content type="html"><![CDATA[<p>IDX文件格式是用来存储大规模数据集的文件格式，通常用于机器学习和模式识别的训练和测试数据。特别是，MNIST手写数字数据库中的图像和标签数据就采用了IDX文件格式。</p><p>IDX文件格式有几个变种，其中<code>idx3-ubyte</code>和<code>idx1-ubyte</code>分别用于存储多维数组和一维数组的数据。具体来说：</p><ul><li><strong><code>idx3-ubyte</code></strong> 文件格式通常用于存储图像数据（多维数组），例如MNIST数据集中28x28像素的灰度图像。</li><li><strong><code>idx1-ubyte</code></strong> 文件格式通常用于存储标签数据（一维数组），例如MNIST数据集中图像对应的标签（0到9）。</li></ul><h2 id="idx3-ubyte文件格式的结构"><a href="#idx3-ubyte文件格式的结构" class="headerlink" title="idx3-ubyte文件格式的结构"></a><code>idx3-ubyte</code>文件格式的结构</h2><p><code>idx3-ubyte</code>文件包含以下部分：</p><ol><li><strong>魔数（Magic Number）</strong>：用于标识文件类型，前两字节通常为0x00和0x00，接下来的两个字节表示数据类型和维度。</li><li><strong>维度信息</strong>：表示数据的维数和各维度的大小。</li><li><strong>数据</strong>：存储实际的图像数据，以无符号字节（ubyte）形式存储。</li></ol><p><strong>文件格式</strong></p><ul><li><strong>前4字节</strong>：魔数</li><li><strong>第5到8字节</strong>：样本数量（N）</li><li><strong>第9到12字节</strong>：每个样本的行数（R）</li><li><strong>第13到16字节</strong>：每个样本的列数（C）</li><li><strong>后续字节</strong>：实际的图像数据，共 N x R x C 个字节</li></ul><h2 id="idx1-ubyte-文件结构"><a href="#idx1-ubyte-文件结构" class="headerlink" title="idx1-ubyte 文件结构"></a><code>idx1-ubyte</code> 文件结构</h2><p><code>idx1-ubyte</code> 文件包含以下部分：</p><ol><li><strong>魔数（Magic Number）</strong>：用于标识文件类型，前两字节通常为0x00和0x00，接下来的两个字节表示数据类型和维度。</li><li><strong>数据数量（Number of Items）</strong>：表示文件中包含的数据项数量。</li><li><strong>数据</strong>：实际的数据，以无符号字节（ubyte）形式存储。</li></ol><p><strong>具体细节：</strong></p><ul><li><strong>前4字节</strong>：魔数</li><li><strong>第5到8字节</strong>：数据项数量</li><li><strong>后续字节</strong>：实际的数据，每个数据项占1字节</li></ul><h2 id="魔数"><a href="#魔数" class="headerlink" title="魔数"></a>魔数</h2><p>魔数（Magic Number）来标识文件类型和数据的基本结构。魔数位于文件的前4个字节，表示数据类型和维度。以下是 IDX 文件格式中常见的魔数及其含义：</p><h3 id="常见魔数值和含义"><a href="#常见魔数值和含义" class="headerlink" title="常见魔数值和含义"></a>常见魔数值和含义</h3><p>IDX 文件的魔数由四个字节组成：</p><ol><li><strong>前两个字节</strong>：始终为 0x00 和 0x00，用于标识这是一个 IDX 文件。</li><li><strong>第三个字节</strong>：表示数据类型。</li><li><strong>第四个字节</strong>：表示数据的维数。</li></ol><h3 id="数据类型编码"><a href="#数据类型编码" class="headerlink" title="数据类型编码"></a>数据类型编码</h3><ul><li><strong>0x08</strong>：无符号字节（unsigned byte）</li><li><strong>0x09</strong>：有符号字节（signed byte）</li><li><strong>0x0B</strong>：短整型（short, 2 bytes）</li><li><strong>0x0C</strong>：整型（int, 4 bytes）</li><li><strong>0x0D</strong>：单精度浮点数（float, 4 bytes）</li><li><strong>0x0E</strong>：双精度浮点数（double, 8 bytes）</li></ul><h3 id="数据维度"><a href="#数据维度" class="headerlink" title="数据维度"></a>数据维度</h3><ul><li><strong>0x01</strong>：一维数组（vector）</li><li><strong>0x02</strong>：二维数组（matrix）</li><li><strong>0x03</strong>：三维数组（3D matrix）</li><li><strong>0x04</strong>：四维数组（4D matrix）</li></ul><h3 id="示例魔数和对应的文件类型"><a href="#示例魔数和对应的文件类型" class="headerlink" title="示例魔数和对应的文件类型"></a>示例魔数和对应的文件类型</h3><ol><li><strong>0x00000801</strong>：一维数组，每个元素为无符号字节。例如，MNIST 标签数据（idx1-ubyte）。</li><li><strong>0x00000803</strong>：三维数组，每个元素为无符号字节。例如，MNIST 图像数据（idx3-ubyte）。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;IDX文件格式是用来存储大规模数据集的文件格式，通常用于机器学习和模式识别的训练和测试数据。特别是，MNIST手写数字数据库中的图像和标签数据就采用了IDX文件格式。&lt;/p&gt;
+&lt;p&gt;IDX文件格式有几个变种，其中&lt;code&gt;idx3-ubyte&lt;/code&gt;和&lt;code&gt;i</summary>
+      
+    
+    
+    
+    <category term="AI学习笔记" scheme="https://houjushang.com/categories/AI%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="ai,idx" scheme="https://houjushang.com/tags/ai-idx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://houjushang.com/2024/08/08/Untitled%202/"/>
+    <id>https://houjushang.com/2024/08/08/Untitled%202/</id>
+    <published>2024-08-08T09:25:05.689Z</published>
+    <updated>2024-08-08T09:25:05.689Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://houjushang.com/2024/08/08/Untitled%201/"/>
+    <id>https://houjushang.com/2024/08/08/Untitled%201/</id>
+    <published>2024-08-08T02:25:45.490Z</published>
+    <updated>2024-08-08T02:25:45.490Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://houjushang.com/2024/08/08/Untitled/"/>
+    <id>https://houjushang.com/2024/08/08/Untitled/</id>
+    <published>2024-08-08T02:25:44.377Z</published>
+    <updated>2024-08-08T02:25:44.377Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -61,7 +171,7 @@
     <link href="https://houjushang.com/2023/08/10/%E6%B5%8B%E8%AF%95%20copy/"/>
     <id>https://houjushang.com/2023/08/10/%E6%B5%8B%E8%AF%95%20copy/</id>
     <published>2023-08-10T11:22:08.000Z</published>
-    <updated>2023-10-10T12:53:13.437Z</updated>
+    <updated>2024-08-08T02:23:07.397Z</updated>
     
     <content type="html"><![CDATA[<h2 id="aaa"><a href="#aaa" class="headerlink" title="aaa"></a>aaa</h2>]]></content>
     
